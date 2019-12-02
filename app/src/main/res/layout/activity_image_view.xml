@@ -69,9 +69,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/image_1_width"
+                    android:layout_height="@dimen/image_1_height"
                     android:src="@drawable/image_1" />
 
                 <TextView
@@ -158,9 +157,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/image_2_width"
+                    android:layout_height="@dimen/image_2_height"
                     android:src="@drawable/image_2" />
 
                 <TextView
@@ -247,9 +245,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/image_3_width"
+                    android:layout_height="@dimen/image_3_height"
                     android:src="@drawable/image_3" />
 
                 <TextView

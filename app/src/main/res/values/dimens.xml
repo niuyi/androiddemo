@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="image_width">300px</dimen>
+    <dimen name="image_width">400px</dimen>
+    <dimen name="image_3_width">223px</dimen>
+    <dimen name="image_3_height">600px</dimen>
+    <dimen name="image_2_width">428px</dimen>
+    <dimen name="image_2_height">600px</dimen>
+    <dimen name="image_1_width">214px</dimen>
+    <dimen name="image_1_height">300px</dimen>
 </resources>
