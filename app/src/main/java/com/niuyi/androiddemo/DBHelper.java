@@ -18,14 +18,15 @@ public class DBHelper extends SQLiteOpenHelper {
             + COLUMNS_NAME + " text"
             + ");";
 
-    public DBHelper(@Nullable Context context) {
-        super(context, DB_NAME, null, DATABASE_VERSION);
-    }
-
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_TABLE_CREATE);
     }
+
+    public DBHelper(@Nullable Context context) {
+        super(context, DB_NAME, null, DATABASE_VERSION);
+    }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

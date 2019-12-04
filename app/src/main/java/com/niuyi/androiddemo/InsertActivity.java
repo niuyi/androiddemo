@@ -27,7 +27,7 @@ public class InsertActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         DBHelper mDBHelper = new DBHelper(this);
-        mDB = mDBHelper.getWritableDatabase();
+        SQLiteDatabase mDB = mDBHelper.getWritableDatabase();
     }
 
     @Override
@@ -70,18 +70,18 @@ public class InsertActivity extends AppCompatActivity {
                     mDB.endTransaction();
                 }
 
-//                try{
-//
-//                    for(int i = 0 ; i < 100000 ; i++){
-//                        ContentValues values = new ContentValues();
-//                        values.put(COLUMNS_NAME, "name: " + i);
-//                        mDB.insert(TABLE_NAME, null, values);
-//                    }
-//
-//                    mDB.setTransactionSuccessful();
-//                }finally {
-//                    mDB.endTransaction();
-//                }
+                try{
+
+                    for(int i = 0 ; i < 100000 ; i++){
+                        ContentValues values = new ContentValues();
+                        values.put(COLUMNS_NAME, "name: " + i);
+                        mDB.insert(TABLE_NAME, null, values);
+                    }
+
+                    mDB.setTransactionSuccessful();
+                }finally {
+                    mDB.endTransaction();
+                }
 
                 long timeInMethod = SystemClock.uptimeMillis() - started;
 
