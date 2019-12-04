@@ -36,7 +36,8 @@ public class ImageViewActivity extends AppCompatActivity {
                 "FIT_CENTER",
                 "CENTER",
                 "CENTER_CROP",
-                "CENTER_INSIDE"
+                "CENTER_INSIDE",
+                "MATRIX"
         };
 
 
@@ -68,6 +69,10 @@ public class ImageViewActivity extends AppCompatActivity {
                     mImageView_1.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
                     mImageView_2.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
                     mImageView_3.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+                }else if("MATRIX".equalsIgnoreCase(value)){
+                    mImageView_1.setScaleType(ImageView.ScaleType.MATRIX);
+                    mImageView_2.setScaleType(ImageView.ScaleType.MATRIX);
+                    mImageView_3.setScaleType(ImageView.ScaleType.MATRIX);
                 }
             }
 
