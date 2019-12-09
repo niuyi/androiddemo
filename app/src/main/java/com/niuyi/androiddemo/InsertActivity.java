@@ -8,13 +8,17 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.niu.lib.MyAnnotation;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 import static com.niuyi.androiddemo.DBHelper.COLUMNS_NAME;
 import static com.niuyi.androiddemo.DBHelper.TABLE_NAME;
 
-public class InsertActivity extends AppCompatActivity {
+@MyAnnotation(name="new_name")
+public class InsertActivity extends BaseActivity
+{
 
     private static final String TAG = InsertActivity.class.getCanonicalName() + "_LOG";
     private SQLiteDatabase mDB;
