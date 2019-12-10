@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class App extends Application {
 
-    private static final String TAG = "App";
+    private static final String TAG = "App_LOG";
 
     @Override
     public void onCreate() {
@@ -44,22 +44,22 @@ public class App extends Application {
 
             @Override
             public void onActivityPaused(Activity activity) {
-
+                Log.i(TAG, "onActivityPaused: " + activity.getClass().getCanonicalName());
             }
 
             @Override
             public void onActivityStopped(Activity activity) {
-
+                Log.i(TAG, "onActivityStopped: " + activity.getClass().getCanonicalName());
             }
 
             @Override
             public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-
+                Log.i(TAG, "onActivitySaveInstanceState: " + activity.getClass().getCanonicalName());
             }
 
             @Override
             public void onActivityDestroyed(Activity activity) {
-
+                Log.i(TAG, "onActivityDestroyed: " + activity.getClass().getCanonicalName());
             }
         });
     }
