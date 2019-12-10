@@ -12,7 +12,8 @@ public class AActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
-        Log.i("APP_LOG", "onCreate: " + savedInstanceState);
+        int widthPixels = getResources().getDisplayMetrics().widthPixels;
+        Log.i("APP_LOG", "onCreate: " + widthPixels);
     }
 
     public void gotoB(View view){
